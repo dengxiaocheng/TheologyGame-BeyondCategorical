@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>范畴之外 / Beyond the Categorical</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:100%;height:100%;overflow:hidden}
+    body{
+      background:#0d0d1a;
+      color:#e8e0d4;
+      font-family:"Noto Serif SC","Noto Serif","Georgia",serif;
+      display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+    }
+    #app{
+      display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+      width:100%;max-width:480px;
+      min-height:100vh;padding:24px;
+      text-align:center;gap:32px;
+    }
+    h1{
+      font-size:1.6rem;font-weight:400;
+      letter-spacing:.12em;line-height:1.6;
+      color:#c9b99a;
+    }
+    .subtitle{
+      font-size:.85rem;color:#7a7060;
+      letter-spacing:.06em;line-height:1.5;
+      max-width:320px;
+    }
+    #start-btn{
+      display:flex;align-items:center;justify-content:center;
+      min-width:220px;min-height:52px;
+      padding:14px 36px;
+      background:transparent;
+      border:1px solid #5a4e3c;
+      border-radius:4px;
+      color:#c9b99a;
+      font-family:inherit;font-size:1rem;
+      letter-spacing:.1em;
+      cursor:pointer;
+      transition:border-color .3s,color .3s;
+      -webkit-tap-highlight-color:transparent;
+    }
+    #start-btn:hover,#start-btn:focus{
+      border-color:#c9b99a;color:#f0e8d8;
+      outline:none;
+    }
+    #status{
+      font-size:.75rem;color:#5a5040;
+      letter-spacing:.04em;
+      min-height:1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>范畴之外</h1>
+    <p class="subtitle">Beyond the Categorical — 当巴别的回声不再分类，神学便走到范畴之外。</p>
+    <button id="start-btn" type="button">开始探索</button>
+    <div id="status"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
